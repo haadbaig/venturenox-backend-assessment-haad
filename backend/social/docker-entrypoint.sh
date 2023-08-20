@@ -8,5 +8,7 @@ set -e
 # echo "Seeding database"
 # yarn seed
 
+echo "Starting migration"
+yarn migrate
 echo "Starting server"
 yarn start

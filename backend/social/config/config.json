@@ -10,5 +10,11 @@
   "test": {
   },
   "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "social",
+    "host": "postgres",
+    "dialect": "postgres",
+    "port": "5432"
   }
 }

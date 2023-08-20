@@ -2,23 +2,23 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    /**
+	async up (queryInterface, Sequelize) {
+		/**
      * Add altering commands here.
      *
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.renameColumn('Tenant_Profile', "tenant_name", "name");
-  },
+		await queryInterface.renameColumn('Tenant_Profile', 'tenant_name', 'name');
+	},
 
-  async down (queryInterface, Sequelize) {
-    /**
+	async down (queryInterface, Sequelize) {
+		/**
      * Add reverting commands here.
      *
      * Example:
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.renameColumn('Tenant_Profile', "name", "tenant_name");
-  }
+		await queryInterface.renameColumn('Tenant_Profile', 'name', 'tenant_name');
+	}
 };

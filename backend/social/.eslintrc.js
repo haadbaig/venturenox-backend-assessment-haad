@@ -27,5 +27,6 @@ module.exports = {
 			'error',
 			'always'
 		]
-	}
+	},
+	ignorePatterns: ['migrations/*'],
 };
